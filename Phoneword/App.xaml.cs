@@ -8,8 +8,9 @@ namespace Phoneword
     {
         public App()
         {
+            //Initialize the app when started up
             InitializeComponent();
-            MainPage = new MainPage();
+            MainPage = new MainPage(); //sets the main page to MainPage.xaml
         }
 
         protected override void OnStart()
