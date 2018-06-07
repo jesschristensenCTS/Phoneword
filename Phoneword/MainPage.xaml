@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--This is how to comment in xaml-->
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                    x:Class="Phoneword.MainPage">
@@ -9,9 +10,14 @@
         </OnPlatform>
     </ContentPage.Padding>
     <StackLayout>
-      <Label Text="Enter a Phoneword:" />
+      <!--Setting up components on the MainPage-->
+      <Label Text="Enter a Phoneword:" />   
+      <!--A lable containing "Enter a Phoneword"-->
       <Entry x:Name="phoneNumberText" Text="1-855-XAMARIN" />
+      <!--An Entry field called phoneNumberText with the defualt text of an example phone-->
       <Button x:Name="translateButon" Text="Translate" Clicked="OnTranslate" />
+      <!--A translateButton which when clicked calls the function OnTranslate in the MainPage.cs file-->
       <Button x:Name="callButton" Text="Call" IsEnabled="false" Clicked="OnCall" />
+      <!--A callButton which is by default disabled and greyed out, it is enabled when a phone word is translated. When it is clicked the OnCall function in the cs file is called-->
     </StackLayout>
 </ContentPage>

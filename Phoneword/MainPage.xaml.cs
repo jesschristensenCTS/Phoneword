@@ -10,6 +10,7 @@ namespace Phoneword
 
         public MainPage()
         {
+            //load in the components in the xaml
             InitializeComponent();
         }
 
@@ -36,7 +37,7 @@ namespace Phoneword
                     "Dial a Number",
                     "Would you like to call " + translatedNumber + "?",
                     "Yes",
-                    "No")) //creates an alert with text and a button for yes and no. Returns true if yes is pressed, false if no is pressed
+                    "No")) //creates an alert with text and a button for yes and no. Returns true if yes is pressed, false if no is pressed. Cannot do anything until a response is recieved
             {
                 var dialer = DependencyService.Get<IDialer>();
                 if (dialer != null)
